@@ -1,5 +1,5 @@
 # Stretch Goals for the *nix Scavenger Hunt
-
+hi hi
 The following goals are meant to provide a way for more experienced users to
 extend their knowledge of the *nix command line.
 
