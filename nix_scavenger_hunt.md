@@ -14,18 +14,74 @@ and then clone it to your development environment.
 
 ### Navigating the Filesystem
 
-* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*
-* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
-* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
-* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
-* Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
+* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*/home/cabox/workspace
+* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*LICENSE    challenge_files        nix_scavenger_hunt_stretch.md
+README.md  nix_scavenger_hunt.md  super_scavengers.md
+* You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. total 40K
+drwxrwxr-x 4 cabox cabox 4.0K Apr 11 15:53 .
+drwxr-xr-x 7 cabox cabox 4.0K Apr 11 15:53 ..
+drwxrwxr-x 8 cabox cabox 4.0K Apr 11 15:53 .git
+-rw-rw-r-- 1 cabox cabox 1.1K Apr 11 15:53 LICENSE
+-rw-rw-r-- 1 cabox cabox 2.7K Apr 11 15:53 README.md
+drwxrwxr-x 7 cabox cabox 4.0K Apr 11 15:53 challenge_files
+-rw-rw-r-- 1 cabox cabox 5.6K Apr 11 15:59 nix_scavenger_hunt.md
+-rw-rw-r-- 1 cabox cabox  317 Apr 11 15:53 nix_scavenger_hunt_stretch.md
+-rw-rw-r-- 1 cabox cabox  191 Apr 11 15:53 super_scavengers.md*How are the results different when you use the `-alh` options?* -bash: -alh: command not found
+* The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. man ls
+           Display the manual page for the item (program) ls.
+           man -a intro
+           Display,  in  succession,  all  of the available intro manual pages
+           contained within the manual.  It is possible to quit  between  suc-
+           cessive displays or skip any of them.
+           man -l -Tdvi ./foo.1x.gz > ./foo.1x.dvi
+           This  command  will  decompress  and format the nroff source manual
+           page ./foo.1x.gz into a device independent (dvi) file.   The  redi-
+           rection is necessary as the -T flag causes output to be directed to
+           stdout with no pager.  The output could be viewed  with  a  program
+           such  as  xdvi or further processed into PostScript using a program
+           such as dvips.
+           Man -h is the browser *Write down what those options do?*
+* Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. bin   dev  fastboot  lib    media  opt   root  sbin  sys  usr
+boot  etc  home      lib64  mnt    proc  run   srv   tmp  var/home/cabox*What files and directories do you see listed?*
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
-* Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
+
+* Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*/home/cabox
+
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
+
 * Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
+
 * Press the up arrow on your keyboard. *What just happened?*
+
 * Press the up arrow a few more times. *What do you see?*
-* Run the `history` command. *What do you see?*
+
+* Run the `history` command. *What do you see?*cabox@box-codeanywhere:~$ history
+    1  pwd
+    2  ls
+    3  ls -alh
+    4  -ahl
+    5  -alh
+    6  'ls /'
+    7  'ls/'
+    8  ls/
+    9  ls /
+   10  cd
+   11  /
+   12  cd
+   13  pwd
+   14  cd
+   15  ~
+   16  pwd
+   17  ~
+   18  cd
+   19  cd ~
+   20  cd
+   21  ~
+   22  pwd
+   23  cd
+   24  man
+   25  man/
+   26  history
 
 ### Observing the System
 
