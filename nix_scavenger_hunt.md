@@ -135,7 +135,8 @@ kendals-MBP:~ kendalsmith$
 kendalsmith console  Apr  6 13:19, no just me
 * How long has your system been running? Use `uptime` to see, and *paste the result here:*
 19:34  up 5 days,  6:16, 1 user, load averages: 1.90 1.94 1.86
-* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?* The time and date of exactly what terminal commands took place and by whom.
+* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?* The time and date of exactly what terminal commands took place and by whom.  
+
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?* I believe these are the extensions running at this time.
 
 ### Finding and Viewing Files
